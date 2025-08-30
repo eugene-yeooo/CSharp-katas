@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/eugene/workspace/C# katas/FizzBuzz/FizzBuzz.csproj": {}
+    "/home/eugene/workspace/CSharp-katas/FizzBuzz/FizzBuzz.csproj": {}
   },
   "projects": {
-    "/home/eugene/workspace/C# katas/FizzBuzz/FizzBuzz.csproj": {
+    "/home/eugene/workspace/CSharp-katas/FizzBuzz/FizzBuzz.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/eugene/workspace/C# katas/FizzBuzz/FizzBuzz.csproj",
+        "projectUniqueName": "/home/eugene/workspace/CSharp-katas/FizzBuzz/FizzBuzz.csproj",
         "projectName": "FizzBuzz",
-        "projectPath": "/home/eugene/workspace/C# katas/FizzBuzz/FizzBuzz.csproj",
+        "projectPath": "/home/eugene/workspace/CSharp-katas/FizzBuzz/FizzBuzz.csproj",
         "packagesPath": "/home/eugene/.nuget/packages/",
-        "outputPath": "/home/eugene/workspace/C# katas/FizzBuzz/obj/",
+        "outputPath": "/home/eugene/workspace/CSharp-katas/FizzBuzz/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/eugene/.nuget/NuGet/NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PLz1+tdxGkA=",
+  "dgSpecHash": "aNYvSVeZ4Co=",
   "success": true,
-  "projectFilePath": "/home/eugene/workspace/C# katas/FizzBuzz/FizzBuzz.csproj",
+  "projectFilePath": "/home/eugene/workspace/CSharp-katas/FizzBuzz/FizzBuzz.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
