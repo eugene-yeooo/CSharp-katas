@@ -1,2 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+
+namespace Palindrome
+{
+  public class PalindromeKata
+  {
+    public bool IsPalindrome(string input)
+    {
+      var reversed = new string(input.Reverse().ToArray());
+
+      return input == reversed;
+    }
+  }
+}
