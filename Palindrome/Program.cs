@@ -1,4 +1,19 @@
-﻿
+﻿using Palindrome;
+
+string[] testInputs = new string[]
+{
+    "racecar",    
+    "level",      
+    "hello",      
+    "world",      
+    "madam",      
+    "civic",      
+    "noon",       
+    "palindrome", 
+    "anna",
+};
+
+
 
 namespace Palindrome
 {
