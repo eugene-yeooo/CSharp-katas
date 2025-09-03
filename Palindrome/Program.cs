@@ -13,13 +13,17 @@ string[] testInputs = new string[]
     "anna",
 };
 
+foreach (var word in testInputs)
+{
+  Console.WriteLine($"{word} → {PalindromeKata.IsPalindrome(word)}");
+}
 
 
 namespace Palindrome
 {
   public class PalindromeKata
   {
-    public bool IsPalindrome(string input)
+    public static bool IsPalindrome(string input)
     {
       var reversed = new string(input.Reverse().ToArray());
 
