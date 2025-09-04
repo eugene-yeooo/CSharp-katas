@@ -1,7 +1,7 @@
 ﻿using Palindrome;
 
 string[] testInputs = new string[]
-{
+ {
     "racecar",    
     "level",      
     "hello",      
@@ -13,17 +13,20 @@ string[] testInputs = new string[]
     "anna",
 };
 
+Console.WriteLine("Hello World!");
+Console.WriteLine("This is my Palindrome kata.");
+
 foreach (var word in testInputs)
 {
-  Console.WriteLine($"{word} → {PalindromeKata.IsPalindrome(word)}");
+  Console.WriteLine($"{word} = {PalindromeChecker.ReverseInput(word)}");
 }
 
 
 namespace Palindrome
 {
-  public class PalindromeKata
+  public class PalindromeChecker
   {
-    public static bool IsPalindrome(string input)
+    public static bool ReverseInput(string input)
     {
       var reversed = new string(input.Reverse().ToArray());
 
