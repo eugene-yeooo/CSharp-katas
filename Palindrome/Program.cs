@@ -1,15 +1,15 @@
 ﻿using Palindrome;
 
 string[] testInputs = new string[]
- {
-    "racecar",    
-    "level",      
-    "hello",      
-    "world",      
-    "madam",      
-    "civic",      
-    "noon",       
-    "palindrome", 
+{
+  "racecar",
+    "level",
+    "hello",
+    "world",
+    "madam",
+    "civic",
+    "noon",
+    "palindrome",
     "anna",
 };
 
@@ -18,13 +18,16 @@ Console.WriteLine("This is my Palindrome kata.");
 
 foreach (var word in testInputs)
 {
-  Console.WriteLine($"{word} = {PalindromeChecker.TwoPoint(word)}");
+  // Console.WriteLine($"{word} -> {PalindromeKata.ReverseInput(word)}");
+  Console.WriteLine($"{word} -> {PalindromeKata.TwoPoint(word)}");
 }
+
+
 
 
 namespace Palindrome
 {
-  public class PalindromeChecker
+  public class PalindromeKata
   {
     public static bool ReverseInput(string input)
     {
@@ -50,3 +53,4 @@ namespace Palindrome
     }
   }
 }
+
