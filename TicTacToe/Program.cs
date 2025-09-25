@@ -46,3 +46,24 @@ int GetInput(string message)
     Console.WriteLine("Invalid input. Please neter a number between 0 and 2.");
   }
 }
+
+// place the move
+while (true)
+{
+  PrintBoard(board);
+
+  Console.WriteLine($"Player {currentPlayer}'s turn!");
+
+  int row = GetInput("Enter row (0-2): ");
+  int col = GetInput("Enter column (0-2): ");
+
+  if (board[row, col] == ' ')
+  {
+    board[row, col] = currentPlayer;
+    currentPlayer = (currentPlayer == 'X') ? 'O' : 'X';
+  }
+  else
+  {
+    Console.WriteLine("That spot is already taken. Try again!");
+  }
+}
