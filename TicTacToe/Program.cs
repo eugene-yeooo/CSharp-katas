@@ -47,7 +47,7 @@ int GetInput(string message)
   }
 }
 
-// place the move
+// main game loop
 while (true)
 {
   PrintBoard(board);
@@ -59,11 +59,50 @@ while (true)
 
   if (board[row, col] == ' ')
   {
+    // place the move
     board[row, col] = currentPlayer;
-    currentPlayer = (currentPlayer == 'X') ? 'O' : 'X';
+
+    // switches player
+    currentPlayer = (currentPlayer == 'X') ? 'O' : 'X'; 
   }
   else
   {
     Console.WriteLine("That spot is already taken. Try again!");
   }
+}
+
+// check win function
+bool CheckWin(char[,] board, char player)
+{
+  // rows
+  for (int row = 0; row < 3; row++)
+  {
+    if (board[row, 0] == player && board[row, 1] == player && board[row, 2] == player)
+    {
+      return true;
+    }
+  }
+
+  // columns
+  for (int col = 0; col < 3; col++)
+  {
+    if (board[0, col] == player && board[1, col] == player && board[2, col] == player)
+    {
+      return true;
+    }
+  }
+
+  // diagonals
+  if (board[0, 0] == player && board[1, 1] == player && board[2, 2] == player)
+  {
+    return true;
+  }
+
+  if (board[0, 2] == player && board[1, 1] == player && board[2, 0] == player)
+  {
+    return true;
+  }
+
+  return false;
+
 }
