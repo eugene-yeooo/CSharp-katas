@@ -1,5 +1,8 @@
-﻿char[,] board = new char[3, 3];
+﻿// establish board
+char[,] board = new char[3, 3];
 
+
+// initialise board with spaces
 for (int row = 0; row < 3; row++)
 {
   for (int col = 0; col < 3; col++)
@@ -8,6 +11,7 @@ for (int row = 0; row < 3; row++)
   }
 }
 
+// function for printing board and call function
 void PrintBoard(char[,] board)
 {
   for (int row = 0; row < 3; row++)
@@ -22,8 +26,10 @@ void PrintBoard(char[,] board)
 
 PrintBoard(board);
 
+// establish current player
 char currentPlayer = 'X';
 
+// function for asking player for input
 int GetInput(string message)
 {
   int value;
