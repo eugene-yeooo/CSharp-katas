@@ -21,3 +21,22 @@ void PrintBoard(char[,] board)
 }
 
 PrintBoard(board);
+
+char currentPlayer = 'X';
+
+int GetInput(string message)
+{
+  int value;
+  while (true)
+  {
+    Console.Write(message);
+    string? input = Console.ReadLine();
+
+    if (int.TryParse(input, out value) && value >= 0 && value <= 2)
+    {
+      return value;
+    }
+
+    Console.WriteLine("Invalid input. Please neter a number between 0 and 2.");
+  }
+}
