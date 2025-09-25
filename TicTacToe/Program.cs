@@ -62,6 +62,22 @@ while (true)
     // place the move
     board[row, col] = currentPlayer;
 
+    // check for win
+    if (CheckWin(board, currentPlayer))
+    {
+      PrintBoard(board);
+      Console.WriteLine($"Player {currentPlayer} wins!");
+      break;
+    }
+
+    // check for draw
+    if (CheckDraw(board))
+    {
+      PrintBoard(board);
+      Console.WriteLine("It's a draw!");
+      break;
+    }
+
     // switches player
     currentPlayer = (currentPlayer == 'X') ? 'O' : 'X'; 
   }
