@@ -106,3 +106,17 @@ bool CheckWin(char[,] board, char player)
   return false;
 
 }
+
+// check draw function
+bool CheckDraw(char[,] board)
+{
+  foreach (char cell in board)
+  {
+    if (cell == ' ')
+    {
+      return false;
+    }
+  }
+
+  return true;
+}
